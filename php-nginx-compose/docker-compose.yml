@@ -23,6 +23,7 @@ services:
         ports:
             - "9000:9000"
         volumes:
+            - "$PWD/php-mysqli/php.ini:/usr/local/etc/php/php.ini"
             - "$PWD/html:/var/www/html"
         networks:
             - app_net
